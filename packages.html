@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tour Packages | Incredible India Tours</title>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <link rel="stylesheet" href="../css/animations.css"/>
+  <link rel="stylesheet" href="../css/packages.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Raleway:wght@300;400;500;600&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar scrolled" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-icon">✦</span>
+      <span class="logo-text">Incredible India Tours</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="packages.html" class="active">Packages</a></li>
+      <li><a href="destinations.html">Destinations</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero" style="background: url('https://images.unsplash.com/photo-1509233725247-49e657c54213?w=1600&q=80') center/cover;">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <p class="hero-eyebrow">Explore India</p>
+      <h1 class="page-hero-title">Our Tour Packages</h1>
+      <p class="page-hero-sub">50+ carefully curated packages across India's finest destinations</p>
+    </div>
+  </section>
+
+  <!-- FILTER TABS -->
+  <section class="filter-section">
+    <div class="container">
+      <div class="filter-bar">
+        <button class="filter-tab active" data-type="all" onclick="filterPackages('all')">All Tours</button>
+        <button class="filter-tab" data-type="family" onclick="filterPackages('family')">👨‍👩‍👧‍👦 Family</button>
+        <button class="filter-tab" data-type="couple" onclick="filterPackages('couple')">💑 Couple</button>
+        <button class="filter-tab" data-type="friends" onclick="filterPackages('friends')">🧑‍🤝‍🧑 Friends</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ALL PACKAGES -->
+  <section class="all-packages section-pad">
+    <div class="container">
+      <div class="pkg-full-grid">
+
+        <!-- 1. Rajasthan -->
+        <div class="pkg-card-full" data-type="family">
+          <div class="pkg-full-img" style="background: url('https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=700&q=80') center/cover;"></div>
+          <div class="pkg-full-body">
+            <div class="pkg-full-header">
+              <div>
+                <span class="pkg-badge family">Family</span>
+                <div class="pkg-location" style="margin-top:10px;">📍 Rajasthan</div>
+                <h2 class="pkg-full-name">Royal Rajasthan & Agra</h2>
+              </div>
+              <div class="pkg-full-price">₹32,999<small>/person</small></div>
+            </div>
+            <p class="pkg-full-desc">Experience the grandeur of Rajputana royalty. Explore magnificent forts, colorful bazaars, desert landscapes and the eternal symbol of love — the Taj Mahal.</p>
+            <div class="pkg-info-row">
+              <div class="info-box"><span class="info-icon">⏱</span><div><strong>Duration</strong><span>7 Days / 6 Nights</span></div></div>
+              <div class="info-box"><span class="info-icon">👥</span><div><strong>Group Size</strong><span>2–20 People</span></div></div>
+              <div class="info-box"><span class="info-icon">🏨</span><div><strong>Stay</strong><span>4-Star Hotels</span></div></div>
+              <div class="info-box"><span class="info-icon">🍽</span><div><strong>Meals</strong><span>Breakfast + Dinner</span></div></div>
+            </div>
+            <div class="pkg-itinerary">
+              <h4>Itinerary Highlights</h4>
+              <div class="day-list">
+                <div class="day-item"><span class="day-badge">Day 1</span> Arrive Delhi — Old Delhi heritage walk, Qutub Minar</div>
+                <div class="day-item"><span class="day-badge">Day 2</span> Delhi → Agra — Taj Mahal at sunrise, Agra Fort</div>
+                <div class="day-item"><span class="day-badge">Day 3</span> Agra → Jaipur — Fatehpur Sikri en route</div>
+                <div class="day-item"><span class="day-badge">Day 4</span> Jaipur — Amber Fort, City Palace, Hawa Mahal</div>
+                <div class="day-item"><span class="day-badge">Day 5</span> Jaipur → Jodhpur — Blue City, Mehrangarh Fort</div>
+                <div class="day-item"><span class="day-badge">Day 6</span> Udaipur — Lake Pichola boat ride, City Palace</div>
+                <div class="day-item"><span class="day-badge">Day 7</span> Departure — Shopping at local bazaars</div>
+              </div>
+            </div>
+            <div class="pkg-activities">
+              <h4>Activities Included</h4>
+              <div class="activity-tags">
+                <span>🐪 Camel Safari</span><span>🎭 Cultural Show</span><span>🛶 Boat Ride</span>
+                <span>🏰 Fort Tours</span><span>🛍 Bazaar Shopping</span><span>📸 Photography Walks</span>
+              </div>
+            </div>
+            <div class="pkg-includes">
+              <div class="inc-item">✅ AC Transportation</div>
+              <div class="inc-item">✅ All Entry Tickets</div>
+              <div class="inc-item">✅ Licensed Guide</div>
+              <div class="inc-item">✅ Hotel Transfers</div>
+            </div>
+            <a href="contact.html" class="pkg-btn" style="display:inline-block;padding:14px 36px;border-radius:50px;">Book This Package</a>
+          </div>
+        </div>
+
+        <!-- 2. Kerala -->
+        <div class="pkg-card-full" data-type="couple">
+          <div class="pkg-full-img" style="background: url('https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=700&q=80') center/cover;"></div>
+          <div class="pkg-full-body">
+            <div class="pkg-full-header">
+              <div>
+                <span class="pkg-badge couple">Couple</span>
+                <div class="pkg-location" style="margin-top:10px;">📍 Kerala</div>
+                <h2 class="pkg-full-name">Kerala Backwaters Bliss</h2>
+              </div>
+              <div class="pkg-full-price">₹28,500<small>/person</small></div>
+            </div>
+            <p class="pkg-full-desc">Drift through mirror-still backwaters, wake up to misty tea gardens and let the rhythm of the ocean melt away every worry. Kerala is pure romance.</p>
+            <div class="pkg-info-row">
+              <div class="info-box"><span class="info-icon">⏱</span><div><strong>Duration</strong><span>6 Days / 5 Nights</span></div></div>
+              <div class="info-box"><span class="info-icon">👥</span><div><strong>Group Size</strong><span>2–8 People</span></div></div>
+              <div class="info-box"><span class="info-icon">🏨</span><div><strong>Stay</strong><span>Houseboat + Resort</span></div></div>
+              <div class="info-box"><span class="info-icon">🍽</span><div><strong>Meals</strong><span>All Meals</span></div></div>
+            </div>
+            <div class="pkg-itinerary">
+              <h4>Itinerary Highlights</h4>
+              <div class="day-list">
+                <div class="day-item"><span class="day-badge">Day 1</span> Arrive Kochi — Fort Kochi walk, Chinese fishing nets</div>
+                <div class="day-item"><span class="day-badge">Day 2</span> Kochi → Munnar — Tea garden walks, Eravikulam National Park</div>
+                <div class="day-item"><span class="day-badge">Day 3</span> Munnar — Echo Point, Mattupetty Dam, spice plantation</div>
+                <div class="day-item"><span class="day-badge">Day 4</span> Munnar → Alleppey — Check-in on houseboat, sunset cruise</div>
+                <div class="day-item"><span class="day-badge">Day 5</span> Alleppey → Kovalam — Relax on beach, Ayurvedic spa</div>
+                <div class="day-item"><span class="day-badge">Day 6</span> Departure from Thiruvananthapuram</div>
+              </div>
+            </div>
+            <div class="pkg-activities">
+              <h4>Activities Included</h4>
+              <div class="activity-tags">
+                <span>🚤 Houseboat Stay</span><span>🌿 Tea Garden Walk</span><span>🧖 Ayurvedic Spa</span>
+                <span>🎭 Kathakali Show</span><span>🏖 Beach Time</span><span>🐘 Elephant Experience</span>
+              </div>
+            </div>
+            <div class="pkg-includes">
+              <div class="inc-item">✅ AC Houseboat</div>
+              <div class="inc-item">✅ All Meals Onboard</div>
+              <div class="inc-item">✅ Spa Session</div>
+              <div class="inc-item">✅ All Transfers</div>
+            </div>
+            <a href="contact.html" class="pkg-btn" style="display:inline-block;padding:14px 36px;border-radius:50px;">Book This Package</a>
+          </div>
+        </div>
+
+        <!-- 3. Manali Spiti -->
+        <div class="pkg-card-full" data-type="friends">
+          <div class="pkg-full-img" style="background: url('https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=700&q=80') center/cover;"></div>
+          <div class="pkg-full-body">
+            <div class="pkg-full-header">
+              <div>
+                <span class="pkg-badge friends">Friends</span>
+                <div class="pkg-location" style="margin-top:10px;">📍 Himachal Pradesh</div>
+                <h2 class="pkg-full-name">Manali–Spiti Adventure</h2>
+              </div>
+              <div class="pkg-full-price">₹24,999<small>/person</small></div>
+            </div>
+            <p class="pkg-full-desc">One of India's most epic road trips through raw Himalayan terrain, ancient monasteries, alien-like landscapes and starlit skies that you'll never forget.</p>
+            <div class="pkg-info-row">
+              <div class="info-box"><span class="info-icon">⏱</span><div><strong>Duration</strong><span>8 Days / 7 Nights</span></div></div>
+              <div class="info-box"><span class="info-icon">👥</span><div><strong>Group Size</strong><span>6–15 People</span></div></div>
+              <div class="info-box"><span class="info-icon">🏕</span><div><strong>Stay</strong><span>Camp + Guesthouse</span></div></div>
+              <div class="info-box"><span class="info-icon">🍽</span><div><strong>Meals</strong><span>Breakfast + Dinner</span></div></div>
+            </div>
+            <div class="pkg-itinerary">
+              <h4>Itinerary Highlights</h4>
+              <div class="day-list">
+                <div class="day-item"><span class="day-badge">Day 1</span> Arrive Manali — Hadimba Temple, Mall Road night</div>
+                <div class="day-item"><span class="day-badge">Day 2</span> Solang Valley — Paragliding, zip-lining, snow activities</div>
+                <div class="day-item"><span class="day-badge">Day 3</span> Rohtang Pass — Snow fields at 13,050 ft</div>
+                <div class="day-item"><span class="day-badge">Day 4</span> Manali → Kaza via Kunzum Pass</div>
+                <div class="day-item"><span class="day-badge">Day 5</span> Kaza — Key Monastery, Kibber Village</div>
+                <div class="day-item"><span class="day-badge">Day 6</span> Chandratal Lake camping — Stargazing night</div>
+                <div class="day-item"><span class="day-badge">Day 7</span> Return to Manali via Atal Tunnel</div>
+                <div class="day-item"><span class="day-badge">Day 8</span> Departure with unforgettable memories!</div>
+              </div>
+            </div>
+            <div class="pkg-activities">
+              <h4>Activities Included</h4>
+              <div class="activity-tags">
+                <span>🪂 Paragliding</span><span>⛺ Camping</span><span>🏔 High-Pass Crossings</span>
+                <span>🛕 Monastery Visits</span><span>🌌 Stargazing</span><span>🚵 Offroading</span>
+              </div>
+            </div>
+            <div class="pkg-includes">
+              <div class="inc-item">✅ 4WD Vehicle</div>
+              <div class="inc-item">✅ Camping Gear</div>
+              <div class="inc-item">✅ Adventure Permits</div>
+              <div class="inc-item">✅ Expert Driver-Guide</div>
+            </div>
+            <a href="contact.html" class="pkg-btn" style="display:inline-block;padding:14px 36px;border-radius:50px;">Book This Package</a>
+          </div>
+        </div>
+
+        <!-- 4. Goa -->
+        <div class="pkg-card-full" data-type="friends">
+          <div class="pkg-full-img" style="background: url('https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=700&q=80') center/cover;"></div>
+          <div class="pkg-full-body">
+            <div class="pkg-full-header">
+              <div>
+                <span class="pkg-badge friends">Friends</span>
+                <div class="pkg-location" style="margin-top:10px;">📍 Goa</div>
+                <h2 class="pkg-full-name">Goa Beach Party Escape</h2>
+              </div>
+              <div class="pkg-full-price">₹18,500<small>/person</small></div>
+            </div>
+            <p class="pkg-full-desc">Sun, sand, seafood and sunsets. Explore Goa's legendary beaches, colonial Portuguese heritage, night markets and vibrant beach shacks with your squad.</p>
+            <div class="pkg-info-row">
+              <div class="info-box"><span class="info-icon">⏱</span><div><strong>Duration</strong><span>5 Days / 4 Nights</span></div></div>
+              <div class="info-box"><span class="info-icon">👥</span><div><strong>Group Size</strong><span>4–15 People</span></div></div>
+              <div class="info-box"><span class="info-icon">🏨</span><div><strong>Stay</strong><span>Beach Resort</span></div></div>
+              <div class="info-box"><span class="info-icon">🍽</span><div><strong>Meals</strong><span>Breakfast</span></div></div>
+            </div>
+            <div class="pkg-itinerary">
+              <h4>Itinerary Highlights</h4>
+              <div class="day-list">
+                <div class="day-item"><span class="day-badge">Day 1</span> Arrive Panaji — Hotel check-in, Calangute Beach evening</div>
+                <div class="day-item"><span class="day-badge">Day 2</span> North Goa — Baga, Anjuna flea market, Fort Aguada</div>
+                <div class="day-item"><span class="day-badge">Day 3</span> Watersports Day — Parasailing, jet ski, banana ride</div>
+                <div class="day-item"><span class="day-badge">Day 4</span> South Goa — Palolem Beach, Cabo de Rama, Dudhsagar viewpoint</div>
+                <div class="day-item"><span class="day-badge">Day 5</span> Old Goa churches, Mapusa market, departure</div>
+              </div>
+            </div>
+            <div class="pkg-activities">
+              <h4>Activities Included</h4>
+              <div class="activity-tags">
+                <span>🏄 Surfing</span><span>🤿 Snorkeling</span><span>🛥 Cruise</span>
+                <span>🎪 Night Market</span><span>🍹 Beach Shacks</span><span>⛪ Heritage Walk</span>
+              </div>
+            </div>
+            <div class="pkg-includes">
+              <div class="inc-item">✅ Airport Transfers</div>
+              <div class="inc-item">✅ Sightseeing Cab</div>
+              <div class="inc-item">✅ Watersports Pass</div>
+              <div class="inc-item">✅ Sunset Cruise</div>
+            </div>
+            <a href="contact.html" class="pkg-btn" style="display:inline-block;padding:14px 36px;border-radius:50px;">Book This Package</a>
+          </div>
+        </div>
+
+        <!-- 5. Andaman -->
+        <div class="pkg-card-full" data-type="couple">
+          <div class="pkg-full-img" style="background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=700&q=80') center/cover;"></div>
+          <div class="pkg-full-body">
+            <div class="pkg-full-header">
+              <div>
+                <span class="pkg-badge couple">Couple</span>
+                <div class="pkg-location" style="margin-top:10px;">📍 Andaman & Nicobar</div>
+                <h2 class="pkg-full-name">Andaman Island Romance</h2>
+              </div>
+              <div class="pkg-full-price">₹42,000<small>/person</small></div>
+            </div>
+            <p class="pkg-full-desc">Crystal-clear turquoise water, white sand beaches and vibrant coral reefs — Andaman is India's best-kept secret for a breathtaking tropical romance.</p>
+            <div class="pkg-info-row">
+              <div class="info-box"><span class="info-icon">⏱</span><div><strong>Duration</strong><span>7 Days / 6 Nights</span></div></div>
+              <div class="info-box"><span class="info-icon">👥</span><div><strong>Group Size</strong><span>2–6 People</span></div></div>
+              <div class="info-box"><span class="info-icon">🏨</span><div><strong>Stay</strong><span>Beach Resort</span></div></div>
+              <div class="info-box"><span class="info-icon">🍽</span><div><strong>Meals</strong><span>Breakfast + Dinner</span></div></div>
+            </div>
+            <div class="pkg-itinerary">
+              <h4>Itinerary Highlights</h4>
+              <div class="day-list">
+                <div class="day-item"><span class="day-badge">Day 1</span> Arrive Port Blair — Cellular Jail light & sound show</div>
+                <div class="day-item"><span class="day-badge">Day 2</span> Havelock Island — Radhanagar Beach (Asia's best beach)</div>
+                <div class="day-item"><span class="day-badge">Day 3</span> Elephant Beach — Snorkeling, coral reef exploration</div>
+                <div class="day-item"><span class="day-badge">Day 4</span> Neil Island — Natural Bridge, sunset at Laxmanpur</div>
+                <div class="day-item"><span class="day-badge">Day 5</span> Scuba Diving certification experience</div>
+                <div class="day-item"><span class="day-badge">Day 6</span> Ross Island, North Bay — Glass-bottom boat</div>
+                <div class="day-item"><span class="day-badge">Day 7</span> Departure from Port Blair</div>
+              </div>
+            </div>
+            <div class="pkg-activities">
+              <h4>Activities Included</h4>
+              <div class="activity-tags">
+                <span>🤿 Scuba Diving</span><span>🐠 Snorkeling</span><span>🚤 Speed Boat</span>
+                <span>🏖 Beach Walks</span><span>🌅 Sunset Cruise</span><span>🦜 Wildlife Spotting</span>
+              </div>
+            </div>
+            <div class="pkg-includes">
+              <div class="inc-item">✅ Inter-island Ferry</div>
+              <div class="inc-item">✅ Scuba Dive Session</div>
+              <div class="inc-item">✅ All Entry Permits</div>
+              <div class="inc-item">✅ All Transfers</div>
+            </div>
+            <a href="contact.html" class="pkg-btn" style="display:inline-block;padding:14px 36px;border-radius:50px;">Book This Package</a>
+          </div>
+        </div>
+
+        <!-- 6. Jim Corbett -->
+        <div class="pkg-card-full" data-type="family">
+          <div class="pkg-full-img" style="background: url('https://images.unsplash.com/photo-1549366021-9f761d450615?w=700&q=80') center/cover;"></div>
+          <div class="pkg-full-body">
+            <div class="pkg-full-header">
+              <div>
+                <span class="pkg-badge family">Family</span>
+                <div class="pkg-location" style="margin-top:10px;">📍 Uttarakhand</div>
+                <h2 class="pkg-full-name">Jim Corbett Wildlife Safari</h2>
+              </div>
+              <div class="pkg-full-price">₹22,500<small>/person</small></div>
+            </div>
+            <p class="pkg-full-desc">India's oldest national park and home to the majestic Bengal tiger. An extraordinary family experience through pristine jungle with expert naturalist guides.</p>
+            <div class="pkg-info-row">
+              <div class="info-box"><span class="info-icon">⏱</span><div><strong>Duration</strong><span>4 Days / 3 Nights</span></div></div>
+              <div class="info-box"><span class="info-icon">👥</span><div><strong>Group Size</strong><span>2–10 People</span></div></div>
+              <div class="info-box"><span class="info-icon">🏨</span><div><strong>Stay</strong><span>Jungle Resort</span></div></div>
+              <div class="info-box"><span class="info-icon">🍽</span><div><strong>Meals</strong><span>All Meals</span></div></div>
+            </div>
+            <div class="pkg-itinerary">
+              <h4>Itinerary Highlights</h4>
+              <div class="day-list">
+                <div class="day-item"><span class="day-badge">Day 1</span> Arrive Corbett — Evening nature walk, campfire</div>
+                <div class="day-item"><span class="day-badge">Day 2</span> Morning Jeep Safari — Tiger zone (Dhikala)</div>
+                <div class="day-item"><span class="day-badge">Day 3</span> Elephant Safari at dawn, bird-watching, Corbett Museum</div>
+                <div class="day-item"><span class="day-badge">Day 4</span> Garjia Devi Temple, river rafting on Kosi, departure</div>
+              </div>
+            </div>
+            <div class="pkg-activities">
+              <h4>Activities Included</h4>
+              <div class="activity-tags">
+                <span>🐯 Tiger Safari</span><span>🐘 Elephant Ride</span><span>🐦 Bird Watching</span>
+                <span>🏕 Campfire</span><span>🌊 River Rafting</span><span>🔭 Nature Walks</span>
+              </div>
+            </div>
+            <div class="pkg-includes">
+              <div class="inc-item">✅ Safari Permits</div>
+              <div class="inc-item">✅ Naturalist Guide</div>
+              <div class="inc-item">✅ Jungle Resort Stay</div>
+              <div class="inc-item">✅ All Meals</div>
+            </div>
+            <a href="contact.html" class="pkg-btn" style="display:inline-block;padding:14px 36px;border-radius:50px;">Book This Package</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo"><span class="logo-icon">✦</span><span class="logo-text">Incredible India Tours</span></div>
+          <p>Your trusted companion for exploring the diverse wonders of India.</p>
+        </div>
+        <div class="footer-col"><h4>Quick Links</h4><ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="packages.html">Packages</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>Contact</h4><ul class="contact-info">
+          <li>📞 +91 98765 43210</li>
+          <li>✉️ info@incrediblindiatours.com</li>
+        </ul></div>
+      </div>
+      <div class="footer-bottom"><p>© 2024 Incredible India Tours</p></div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

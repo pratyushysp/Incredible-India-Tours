@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Destinations | Incredible India Tours</title>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <link rel="stylesheet" href="../css/animations.css"/>
+  <link rel="stylesheet" href="../css/packages.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Raleway:wght@300;400;500;600&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <style>
+    .dest-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 28px; }
+    .dest-card {
+      position: relative; border-radius: 20px; overflow: hidden;
+      height: 340px; cursor: pointer;
+      box-shadow: var(--shadow-card);
+      transition: var(--transition);
+    }
+    .dest-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-hover); }
+    .dest-card-img {
+      position: absolute; inset: 0;
+      background-size: cover !important;
+      background-position: center !important;
+      transition: transform 0.5s ease;
+    }
+    .dest-card:hover .dest-card-img { transform: scale(1.08); }
+    .dest-card-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(0deg, rgba(10,10,30,0.82) 0%, rgba(0,0,0,0.1) 60%);
+    }
+    .dest-card-content {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      padding: 28px; color: white;
+    }
+    .dest-state {
+      font-size: 0.72rem; letter-spacing: 0.2em;
+      text-transform: uppercase; color: var(--gold);
+      font-weight: 700; margin-bottom: 6px;
+    }
+    .dest-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.55rem; font-weight: 700; margin-bottom: 6px;
+    }
+    .dest-desc { font-size: 0.82rem; color: rgba(255,255,255,0.75); line-height: 1.6; }
+    .dest-tag {
+      display: inline-block; margin-top: 12px;
+      background: linear-gradient(135deg, var(--saffron), var(--gold));
+      padding: 4px 14px; border-radius: 20px;
+      font-size: 0.72rem; font-weight: 700; text-transform: uppercase;
+    }
+    .dest-card.large { grid-column: span 2; height: 400px; }
+    .map-banner {
+      background: linear-gradient(135deg, var(--charcoal), #16213E);
+      border-radius: 20px; padding: 56px; text-align: center; color: white;
+      position: relative; overflow: hidden; margin-top: 48px;
+    }
+    .map-banner h2 { font-family: 'Playfair Display', serif; font-size: 2rem; margin-bottom: 12px; }
+    .map-banner p { color: rgba(255,255,255,0.65); margin-bottom: 28px; }
+    @media(max-width:900px){ .dest-grid{grid-template-columns:repeat(2,1fr);} .dest-card.large{grid-column:span 1; height:340px;} }
+    @media(max-width:600px){ .dest-grid{grid-template-columns:1fr;} }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar scrolled" id="navbar">
+    <div class="nav-logo"><span class="logo-icon">✦</span><span class="logo-text">Incredible India Tours</span></div>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="packages.html">Packages</a></li>
+      <li><a href="destinations.html" class="active">Destinations</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+  </nav>
+
+  <section class="page-hero" style="background: url('https://images.unsplash.com/photo-1548013146-72479768bada?w=1600&q=80') center/cover;">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <p class="hero-eyebrow">Across the Nation</p>
+      <h1 class="page-hero-title">Our Destinations</h1>
+      <p class="page-hero-sub">From snow-capped Himalayas to tropical beaches — discover the diversity of India</p>
+    </div>
+  </section>
+
+  <section class="section-pad">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Explore India</p>
+        <h2 class="section-title">Top Destinations We Cover</h2>
+        <p class="section-desc">Each destination tells a different story. Which one is yours?</p>
+      </div>
+      <div class="dest-grid">
+
+        <div class="dest-card large">
+          <div class="dest-card-img" style="background:url('https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=800&q=80') center/cover;"></div>
+          <div class="dest-card-overlay"></div>
+          <div class="dest-card-content">
+            <div class="dest-state">Rajasthan</div>
+            <div class="dest-name">Jaipur — The Pink City</div>
+            <div class="dest-desc">Land of maharajas, golden forts and vibrant culture. A feast for all the senses.</div>
+            <span class="dest-tag">Heritage · Culture · Royalty</span>
+          </div>
+        </div>
+
+        <div class="dest-card">
+          <div class="dest-card-img" style="background:url('https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=600&q=80') center/cover;"></div>
+          <div class="dest-card-overlay"></div>
+          <div class="dest-card-content">
+            <div class="dest-state">Kerala</div>
+            <div class="dest-name">Alleppey</div>
+            <div class="dest-desc">Backwaters, houseboats & lush green serenity.</div>
+            <span class="dest-tag">Nature · Romantic · Peaceful</span>
+          </div>
+        </div>
+
+        <div class="dest-card">
+          <div class="dest-card-img" style="background:url('https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=600&q=80') center/cover;"></div>
+          <div class="dest-card-overlay"></div>
+          <div class="dest-card-content">
+            <div class="dest-state">Himachal Pradesh</div>
+            <div class="dest-name">Spiti Valley</div>
+            <div class="dest-desc">Ancient monasteries and raw Himalayan wilderness.</div>
+            <span class="dest-tag">Adventure · Mountains · Offbeat</span>
+          </div>
+        </div>
+
+        <div class="dest-card">
+          <div class="dest-card-img" style="background:url('https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=600&q=80') center/cover;"></div>
+          <div class="dest-card-overlay"></div>
+          <div class="dest-card-content">
+            <div class="dest-state">Goa</div>
+            <div class="dest-name">Baga & Palolem</div>
+            <div class="dest-desc">Sun-soaked beaches and Portuguese heritage by night.</div>
+            <span class="dest-tag">Beach · Party · Heritage</span>
+          </div>
+        </div>
+
+        <div class="dest-card">
+          <div class="dest-card-img" style="background:url('https://images.unsplash.com/photo-1548013146-72479768bada?w=600&q=80') center/cover;"></div>
+          <div class="dest-card-overlay"></div>
+          <div class="dest-card-content">
+            <div class="dest-state">Uttar Pradesh</div>
+            <div class="dest-name">Agra — Taj Mahal</div>
+            <div class="dest-desc">An eternal monument to love — a UNESCO wonder.</div>
+            <span class="dest-tag">Heritage · Iconic · Romantic</span>
+          </div>
+        </div>
+
+        <div class="dest-card large">
+          <div class="dest-card-img" style="background:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80') center/cover;"></div>
+          <div class="dest-card-overlay"></div>
+          <div class="dest-card-content">
+            <div class="dest-state">Andaman & Nicobar Islands</div>
+            <div class="dest-name">Havelock Island</div>
+            <div class="dest-desc">Asia's finest beach, pristine coral reefs and crystal-clear tropical waters that feel like another world.</div>
+            <span class="dest-tag">Beach · Diving · Islands</span>
+          </div>
+        </div>
+
+        <div class="dest-card">
+          <div class="dest-card-img" style="background:url('https://images.unsplash.com/photo-1549366021-9f761d450615?w=600&q=80') center/cover;"></div>
+          <div class="dest-card-overlay"></div>
+          <div class="dest-card-content">
+            <div class="dest-state">Uttarakhand</div>
+            <div class="dest-name">Jim Corbett</div>
+            <div class="dest-desc">Bengal tigers, wild elephants and pristine jungle.</div>
+            <span class="dest-tag">Wildlife · Safari · Nature</span>
+          </div>
+        </div>
+
+        <div class="dest-card">
+          <div class="dest-card-img" style="background:url('https://images.unsplash.com/photo-1545273030-6e36e4f57be5?w=600&q=80') center/cover;"></div>
+          <div class="dest-card-overlay"></div>
+          <div class="dest-card-content">
+            <div class="dest-state">Karnataka</div>
+            <div class="dest-name">Hampi</div>
+            <div class="dest-desc">A surreal landscape of ancient ruins and boulders.</div>
+            <span class="dest-tag">Heritage · UNESCO · Historical</span>
+          </div>
+        </div>
+
+        <div class="dest-card">
+          <div class="dest-card-img" style="background:url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80') center/cover;"></div>
+          <div class="dest-card-overlay"></div>
+          <div class="dest-card-content">
+            <div class="dest-state">Sikkim</div>
+            <div class="dest-name">Gangtok & Tsomgo</div>
+            <div class="dest-desc">Emerald monasteries, frozen lakes and Himalayan magic.</div>
+            <span class="dest-tag">Mountains · Monasteries · Snow</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="map-banner">
+        <h2>Ready to Explore India?</h2>
+        <p>Custom itineraries to any destination, tailored to your dream trip</p>
+        <a href="contact.html" class="btn btn-primary">Plan My Trip</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo"><span class="logo-icon">✦</span><span class="logo-text">Incredible India Tours</span></div>
+          <p>Your trusted companion for exploring the diverse wonders of India.</p>
+        </div>
+        <div class="footer-col"><h4>Quick Links</h4><ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="packages.html">Packages</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>Contact</h4><ul class="contact-info">
+          <li>📞 +91 98765 43210</li>
+          <li>✉️ info@incrediblindiatours.com</li>
+        </ul></div>
+      </div>
+      <div class="footer-bottom"><p>© 2024 Incredible India Tours</p></div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

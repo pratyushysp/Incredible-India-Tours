@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us | Incredible India Tours</title>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <link rel="stylesheet" href="../css/animations.css"/>
+  <link rel="stylesheet" href="../css/packages.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Raleway:wght@300;400;500;600&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <style>
+    .about-story { padding: 90px 0; }
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; }
+    .about-images { position: relative; height: 500px; }
+    .ab-img1 {
+      position: absolute; top: 0; left: 0; right: 60px; bottom: 80px;
+      border-radius: 20px;
+      background: url('https://images.unsplash.com/photo-1477587458883-47145ed94245?w=700&q=80') center/cover;
+      box-shadow: var(--shadow-soft);
+    }
+    .ab-img2 {
+      position: absolute; bottom: 0; right: 0; left: 120px; top: 200px;
+      border-radius: 20px;
+      background: url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=500&q=80') center/cover;
+      box-shadow: var(--shadow-hover);
+      border: 6px solid white;
+    }
+    .about-text .section-title { text-align: left; }
+    .about-text .section-tag { text-align: left; display: block; }
+    .about-text p { color: var(--text-mid); line-height: 1.9; margin-bottom: 20px; }
+    .about-values { padding: 80px 0; background: var(--cream); }
+    .values-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 28px; }
+    .value-card {
+      background: white; padding: 36px 24px; border-radius: 16px;
+      text-align: center; box-shadow: var(--shadow-card);
+      transition: var(--transition);
+    }
+    .value-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-hover); }
+    .value-icon { font-size: 2.5rem; margin-bottom: 16px; }
+    .value-card h3 { font-family: 'Playfair Display', serif; font-size: 1.2rem; margin-bottom: 10px; }
+    .value-card p { font-size: 0.87rem; color: var(--text-mid); line-height: 1.7; }
+    .team-section { padding: 90px 0; }
+    .team-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 28px; }
+    .team-card {
+      text-align: center; background: white; border-radius: 20px; padding: 36px 24px;
+      box-shadow: var(--shadow-card); transition: var(--transition);
+    }
+    .team-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-hover); }
+    .team-avatar {
+      width: 90px; height: 90px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--saffron), var(--gold));
+      margin: 0 auto 18px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 2rem; font-weight: 900; color: white;
+      font-family: 'Playfair Display', serif;
+    }
+    .team-card h3 { font-family: 'Playfair Display', serif; font-size: 1.2rem; margin-bottom: 4px; }
+    .team-card .role { font-size: 0.8rem; color: var(--saffron); font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 12px; }
+    .team-card p { font-size: 0.87rem; color: var(--text-mid); line-height: 1.7; }
+    .big-stats { background: linear-gradient(135deg, var(--charcoal), #16213E); padding: 72px 0; }
+    .stats-row { display: grid; grid-template-columns: repeat(4,1fr); gap: 32px; text-align: center; }
+    .big-stat-num { font-family: 'Playfair Display', serif; font-size: 3rem; font-weight: 900; color: var(--gold); display: block; }
+    .big-stat-label { font-size: 0.85rem; color: rgba(255,255,255,0.6); text-transform: uppercase; letter-spacing: 0.12em; margin-top: 6px; }
+    @media(max-width:900px){
+      .about-grid{grid-template-columns:1fr; } .about-images{height:320px;}
+      .values-grid{grid-template-columns:repeat(2,1fr);}
+      .team-grid{grid-template-columns:repeat(2,1fr);}
+      .stats-row{grid-template-columns:repeat(2,1fr);}
+    }
+    @media(max-width:600px){ .values-grid{grid-template-columns:1fr;} .team-grid{grid-template-columns:1fr;} .stats-row{grid-template-columns:1fr 1fr;} }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar scrolled" id="navbar">
+    <div class="nav-logo"><span class="logo-icon">✦</span><span class="logo-text">Incredible India Tours</span></div>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="packages.html">Packages</a></li>
+      <li><a href="destinations.html">Destinations</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+  </nav>
+
+  <section class="page-hero" style="background: url('https://images.unsplash.com/photo-1609920658906-8223bd289001?w=1600&q=80') center/cover;">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <p class="hero-eyebrow">Our Story</p>
+      <h1 class="page-hero-title">About Us</h1>
+      <p class="page-hero-sub">Passionate about India, dedicated to your perfect journey</p>
+    </div>
+  </section>
+
+  <!-- STORY -->
+  <section class="about-story">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-images">
+          <div class="ab-img1"></div>
+          <div class="ab-img2"></div>
+        </div>
+        <div class="about-text">
+          <p class="section-tag">Our Story</p>
+          <h2 class="section-title">Born from a Love for India's Wonders</h2>
+          <p>Incredible India Tours was born from a simple belief: that India is one of the world's most extraordinary travel destinations, and every person deserves to experience its magic in the most authentic, comfortable, and memorable way possible.</p>
+          <p>Founded in 2014, we started as a small team of passionate local travel enthusiasts with deep roots across different states of India. Over a decade, we've grown to become one of the most trusted domestic tour operators — but our heart remains the same.</p>
+          <p>We believe travel is not just about visiting places. It's about connecting with people, cultures, flavours and landscapes that expand your world. Every package we design is crafted with that spirit — whether it's a family creating memories, a couple finding romance, or friends seeking adventure.</p>
+          <a href="packages.html" class="btn btn-primary" style="margin-top:12px;">View Our Packages</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="big-stats">
+    <div class="container">
+      <div class="stats-row">
+        <div><span class="big-stat-num">10+</span><span class="big-stat-label">Years in Business</span></div>
+        <div><span class="big-stat-num">50+</span><span class="big-stat-label">Tour Packages</span></div>
+        <div><span class="big-stat-num">10,000+</span><span class="big-stat-label">Happy Travellers</span></div>
+        <div><span class="big-stat-num">28</span><span class="big-stat-label">States Covered</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUES -->
+  <section class="about-values">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">What We Stand For</p>
+        <h2 class="section-title">Our Core Values</h2>
+      </div>
+      <div class="values-grid">
+        <div class="value-card">
+          <div class="value-icon">🏡</div>
+          <h3>Local Expertise</h3>
+          <p>Our guides are locals who know their regions inside-out — the hidden gems, the best local food, the secret viewpoints only they know.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">💚</div>
+          <h3>Responsible Tourism</h3>
+          <p>We partner with eco-conscious accommodations and practice responsible travel that respects local communities and environments.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">🎯</div>
+          <h3>Personalised Service</h3>
+          <p>No two trips are the same. We tailor every itinerary to match your interests, budget and travel style perfectly.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">🛡️</div>
+          <h3>Your Safety First</h3>
+          <p>From verified hotels to experienced drivers, your safety is our highest priority throughout every journey we plan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="team-section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">The People</p>
+        <h2 class="section-title">Meet Our Team</h2>
+        <p class="section-desc">Passionate travellers who turned their love for India into a mission to share it with the world.</p>
+      </div>
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="team-avatar">AR</div>
+          <h3>Aryan Rao</h3>
+          <div class="role">Founder & CEO</div>
+          <p>With 15 years of travel across all 28 states, Aryan founded IITOURS with a vision to make authentic Indian travel accessible to everyone.</p>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">PS</div>
+          <h3>Priya Sharma</h3>
+          <div class="role">Head of Experiences</div>
+          <p>A Kerala native and former travel journalist, Priya hand-crafts each itinerary to ensure maximum discovery and delight.</p>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">VK</div>
+          <h3>Vikram Kulkarni</h3>
+          <div class="role">Adventure Tour Lead</div>
+          <p>Seasoned mountaineer and outdoor enthusiast, Vikram leads all adventure and trekking packages across the Himalayas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo"><span class="logo-icon">✦</span><span class="logo-text">Incredible India Tours</span></div>
+          <p>Your trusted companion for exploring the diverse wonders of India.</p>
+        </div>
+        <div class="footer-col"><h4>Quick Links</h4><ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="packages.html">Packages</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>Contact</h4><ul class="contact-info">
+          <li>📞 +91 98765 43210</li>
+          <li>✉️ info@incrediblindiatours.com</li>
+        </ul></div>
+      </div>
+      <div class="footer-bottom"><p>© 2024 Incredible India Tours</p></div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

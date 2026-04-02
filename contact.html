@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | Incredible India Tours</title>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <link rel="stylesheet" href="../css/animations.css"/>
+  <link rel="stylesheet" href="../css/packages.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    .contact-section { padding: 80px 0; }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1.6fr; gap: 60px; align-items: start; }
+    .contact-info-card {
+      background: linear-gradient(145deg, var(--charcoal), #16213E);
+      color: white; border-radius: 20px; padding: 48px 40px;
+      position: sticky; top: 100px;
+    }
+    .contact-info-card h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.9rem; margin-bottom: 14px;
+    }
+    .contact-info-card p { color: rgba(255,255,255,0.65); margin-bottom: 36px; line-height: 1.8; }
+    .contact-detail {
+      display: flex; align-items: center; gap: 16px;
+      margin-bottom: 24px;
+    }
+    .contact-detail-icon {
+      width: 46px; height: 46px; border-radius: 12px;
+      background: rgba(255,107,43,0.2);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.2rem; flex-shrink: 0;
+    }
+    .contact-detail strong { display: block; font-size: 0.82rem; color: rgba(255,255,255,0.5); margin-bottom: 2px; text-transform: uppercase; letter-spacing: 0.08em; }
+    .contact-detail span { font-size: 0.95rem; }
+    .working-hours { margin-top: 36px; padding-top: 32px; border-top: 1px solid rgba(255,255,255,0.1); }
+    .working-hours h4 { font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--gold); margin-bottom: 14px; }
+    .hours-row { display: flex; justify-content: space-between; font-size: 0.88rem; margin-bottom: 8px; color: rgba(255,255,255,0.7); }
+
+    /* Form */
+    .contact-form-card { background: white; border-radius: 20px; padding: 48px; box-shadow: var(--shadow-soft); }
+    .contact-form-card h2 { font-family: 'Playfair Display', serif; font-size: 2rem; color: var(--charcoal); margin-bottom: 8px; }
+    .contact-form-card .form-sub { color: var(--text-mid); margin-bottom: 32px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px; }
+    .form-group { margin-bottom: 20px; }
+    .form-group label { display: block; font-size: 0.82rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-mid); margin-bottom: 8px; }
+    .form-group input, .form-group select, .form-group textarea {
+      width: 100%; padding: 14px 18px;
+      border: 2px solid #ece6de;
+      border-radius: 12px;
+      font-family: 'Raleway', sans-serif;
+      font-size: 0.95rem; color: var(--text-dark);
+      outline: none; transition: border-color 0.3s ease;
+      background: var(--warm-white);
+    }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+      border-color: var(--saffron);
+    }
+    .form-group textarea { resize: vertical; min-height: 120px; }
+    .form-submit { width: 100%; padding: 16px; font-size: 1rem; border-radius: 12px; }
+    .success-msg {
+      display: none; background: #d4edda; color: #155724;
+      border-radius: 10px; padding: 16px 20px;
+      margin-top: 16px; font-weight: 600; text-align: center;
+    }
+    @media(max-width:900px){ .contact-grid{grid-template-columns:1fr;} .contact-info-card{position:static;} }
+    @media(max-width:600px){ .form-row{grid-template-columns:1fr;} .contact-form-card{padding:32px 24px;} }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar scrolled" id="navbar">
+    <div class="nav-logo"><span class="logo-icon">✦</span><span class="logo-text">Incredible India Tours</span></div>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="packages.html">Packages</a></li>
+      <li><a href="destinations.html">Destinations</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+  </nav>
+
+  <section class="page-hero" style="background: url('https://images.unsplash.com/photo-1465056836041-7f43ac27dcb5?w=1600&q=80') center/cover; height:360px;">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <p class="hero-eyebrow">Get in Touch</p>
+      <h1 class="page-hero-title">Contact Us</h1>
+      <p class="page-hero-sub">Let's plan your perfect India trip together</p>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+        <div>
+          <div class="contact-info-card">
+            <h2>Let's Plan Your Adventure</h2>
+            <p>Our travel experts are ready to craft a personalised India itinerary just for you. Reach out and let's begin!</p>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">📞</div>
+              <div><strong>Phone</strong><span>+91 98765 43210</span></div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">✉️</div>
+              <div><strong>Email</strong><span>info@incrediblindiatours.com</span></div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">📍</div>
+              <div><strong>Office</strong><span>123, MG Road, Hyderabad,<br>Telangana 500001</span></div>
+            </div>
+            <div class="working-hours">
+              <h4>Working Hours</h4>
+              <div class="hours-row"><span>Monday – Friday</span><span>9:00 AM – 7:00 PM</span></div>
+              <div class="hours-row"><span>Saturday</span><span>10:00 AM – 5:00 PM</span></div>
+              <div class="hours-row"><span>Sunday</span><span>Closed</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-card">
+          <h2>Book a Tour Package</h2>
+          <p class="form-sub">Fill out the form below and our team will get back to you within 24 hours with a customised quote.</p>
+          <div class="form-row">
+            <div class="form-group">
+              <label>First Name</label>
+              <input type="text" placeholder="Ravi" id="fname"/>
+            </div>
+            <div class="form-group">
+              <label>Last Name</label>
+              <input type="text" placeholder="Kumar"/>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" placeholder="ravi@example.com" id="email"/>
+            </div>
+            <div class="form-group">
+              <label>Phone Number</label>
+              <input type="tel" placeholder="+91 98765 43210"/>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Tour Type</label>
+              <select>
+                <option value="">Select tour type</option>
+                <option>Family Tour</option>
+                <option>Couple Tour</option>
+                <option>Friends Tour</option>
+                <option>Solo Adventure</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Destination</label>
+              <select>
+                <option value="">Select destination</option>
+                <option>Rajasthan – Golden Triangle</option>
+                <option>Kerala Backwaters</option>
+                <option>Manali – Spiti</option>
+                <option>Goa Beach Escape</option>
+                <option>Andaman Islands</option>
+                <option>Jim Corbett Safari</option>
+                <option>Other (mention below)</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Travel Date</label>
+              <input type="date"/>
+            </div>
+            <div class="form-group">
+              <label>No. of Travellers</label>
+              <input type="number" placeholder="4" min="1"/>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Budget per Person (₹)</label>
+            <select>
+              <option value="">Select budget range</option>
+              <option>Below ₹15,000</option>
+              <option>₹15,000 – ₹30,000</option>
+              <option>₹30,000 – ₹50,000</option>
+              <option>₹50,000 – ₹1,00,000</option>
+              <option>Above ₹1,00,000</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Special Requests / Message</label>
+            <textarea placeholder="Tell us about any special requirements, celebrations, dietary needs, or anything else we should know..."></textarea>
+          </div>
+          <button class="btn btn-primary form-submit" onclick="submitForm()">Send Enquiry ✈️</button>
+          <div class="success-msg" id="successMsg">✅ Thank you! We'll reach out within 24 hours with your personalised package!</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo"><span class="logo-icon">✦</span><span class="logo-text">Incredible India Tours</span></div>
+          <p>Your trusted companion for exploring the diverse wonders of India.</p>
+        </div>
+        <div class="footer-col"><h4>Quick Links</h4><ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="packages.html">Packages</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+        </ul></div>
+      </div>
+      <div class="footer-bottom"><p>© 2024 Incredible India Tours</p></div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script>
+    function submitForm() {
+      const fname = document.getElementById('fname').value;
+      const email = document.getElementById('email').value;
+      if (!fname || !email) {
+        alert('Please fill in at least your name and email!');
+        return;
+      }
+      document.getElementById('successMsg').style.display = 'block';
+      window.scrollTo({ top: document.getElementById('successMsg').offsetTop - 100, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
