@@ -1,0 +1,162 @@
+/* ===== PAGE HERO ===== */
+.page-hero {
+  position: relative;
+  height: 420px;
+  display: flex; align-items: center; justify-content: center;
+  margin-top: 0;
+}
+.page-hero-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(160deg, rgba(10,10,30,0.72) 0%, rgba(27,67,50,0.55) 100%);
+}
+.page-hero-content {
+  position: relative; z-index: 2;
+  text-align: center; color: white;
+  padding-top: 70px;
+}
+.page-hero-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 900; margin: 8px 0 14px;
+}
+.page-hero-sub { color: rgba(255,255,255,0.75); font-size: 1rem; }
+
+/* ===== FILTER BAR ===== */
+.filter-section { padding: 36px 0; background: var(--cream); }
+.filter-bar {
+  display: flex; gap: 12px; flex-wrap: wrap;
+  justify-content: center;
+}
+.filter-tab {
+  padding: 12px 28px;
+  border: 2px solid #e0d8d0;
+  border-radius: 50px;
+  background: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.88rem; font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: var(--text-dark);
+}
+.filter-tab:hover {
+  border-color: var(--saffron);
+  color: var(--saffron);
+}
+.filter-tab.active {
+  background: linear-gradient(135deg, var(--saffron), var(--gold));
+  border-color: transparent;
+  color: white;
+  box-shadow: 0 6px 20px rgba(255,107,43,0.35);
+}
+
+/* ===== FULL PACKAGE CARDS ===== */
+.pkg-full-grid { display: flex; flex-direction: column; gap: 40px; }
+.pkg-card-full {
+  display: grid; grid-template-columns: 420px 1fr;
+  border-radius: 20px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.10);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+.pkg-card-full:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 56px rgba(0,0,0,0.14);
+}
+.pkg-full-img {
+  min-height: 380px;
+  background-size: cover !important;
+  background-position: center !important;
+  transition: transform 0.5s ease;
+}
+.pkg-card-full:hover .pkg-full-img { transform: scale(1.03); }
+.pkg-full-body { padding: 36px; overflow: hidden; }
+.pkg-full-header {
+  display: flex; justify-content: space-between; align-items: flex-start;
+  margin-bottom: 18px; gap: 12px;
+}
+.pkg-full-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.7rem; color: var(--charcoal);
+  margin-top: 10px; line-height: 1.2;
+}
+.pkg-full-price {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem; font-weight: 700;
+  color: var(--saffron); white-space: nowrap;
+  text-align: right;
+}
+.pkg-full-price small {
+  display: block; font-size: 0.75rem;
+  font-family: 'Raleway', sans-serif;
+  color: var(--text-light); font-weight: 400;
+}
+.pkg-full-desc {
+  color: var(--text-mid); font-size: 0.95rem;
+  line-height: 1.75; margin-bottom: 22px;
+}
+
+/* Info boxes */
+.pkg-info-row {
+  display: grid; grid-template-columns: repeat(4,1fr);
+  gap: 12px; margin-bottom: 24px;
+}
+.info-box {
+  display: flex; align-items: center; gap: 10px;
+  background: var(--cream);
+  padding: 12px; border-radius: 10px;
+}
+.info-icon { font-size: 1.3rem; }
+.info-box strong { display: block; font-size: 0.72rem; color: var(--text-light); text-transform: uppercase; letter-spacing: 0.08em; }
+.info-box span { font-size: 0.85rem; font-weight: 600; color: var(--charcoal); }
+
+/* Itinerary */
+.pkg-itinerary { margin-bottom: 20px; }
+.pkg-itinerary h4, .pkg-activities h4 {
+  font-size: 0.85rem; text-transform: uppercase;
+  letter-spacing: 0.12em; color: var(--saffron);
+  font-weight: 700; margin-bottom: 12px;
+}
+.day-list { display: flex; flex-direction: column; gap: 8px; }
+.day-item {
+  display: flex; align-items: flex-start; gap: 12px;
+  font-size: 0.88rem; color: var(--text-mid);
+  padding: 8px 0;
+  border-bottom: 1px solid #f5f0ea;
+}
+.day-badge {
+  background: linear-gradient(135deg, var(--saffron), var(--gold));
+  color: white; padding: 3px 10px;
+  border-radius: 20px; font-size: 0.72rem;
+  font-weight: 700; white-space: nowrap; flex-shrink: 0;
+}
+
+/* Activities */
+.pkg-activities { margin-bottom: 20px; }
+.activity-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.activity-tags span {
+  background: var(--cream);
+  border: 1px solid #e8ddd2;
+  padding: 6px 14px; border-radius: 20px;
+  font-size: 0.82rem; color: var(--text-dark);
+}
+
+/* Includes */
+.pkg-includes {
+  display: flex; flex-wrap: wrap; gap: 10px;
+  margin-bottom: 24px;
+}
+.inc-item {
+  font-size: 0.82rem; color: var(--forest);
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .pkg-card-full { grid-template-columns: 1fr; }
+  .pkg-full-img { min-height: 260px; }
+  .pkg-info-row { grid-template-columns: repeat(2,1fr); }
+}
+@media (max-width: 600px) {
+  .pkg-full-header { flex-direction: column; }
+  .pkg-info-row { grid-template-columns: 1fr 1fr; }
+}
