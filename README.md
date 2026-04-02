@@ -71,7 +71,7 @@ india-tours/
 3. No server or build tools required — pure HTML/CSS/JS!
 
 ```bash
-git clone https://github.com/yourusername/india-tours.git
+git clone https://github.com/pratyushysp/india-tours.git
 cd india-tours
 # Open index.html in browser
 ```
